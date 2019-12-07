@@ -33,6 +33,3 @@ len <- packCayenneChannels arr [
     (1, Temperature (sample1 ~> sample_th_temperature))
   ]
 ```
-
-
-```
