@@ -1,0 +1,25 @@
+name:                ivory-tower-cayenne
+version:             0.1.0.0
+synopsis:            Cayenne LPP packing for Ivory/Tower
+description:         Pack sensor readings according to Cayenne Low Power Protocol
+license:             BSD3
+author:              Richard Marko
+maintainer:          srk@48.io
+copyright:           2019 Richard Marko
+category:            Embedded
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Ivory.Tower.Cayenne
+                       Ivory.Tower.Cayenne.Types
+
+  build-depends:       base >= 4.6,
+                       ivory,
+                       ivory-serialize,
+                       ivory-stdlib,
+                       tower
+
+  default-language:    Haskell2010
+  ghc-options:         -Wall
